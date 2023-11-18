@@ -1,22 +1,13 @@
 package ModelEliments;
 
-import java.util.List;
+import Stuff.Angle3D;
+import Stuff.Point3D;
 
 public class Camera {
     public Point3D location;
-    public Angle3D angle;
+    public Angle3D angle;   
 
-    public void rotate(Angle3D ang) {
-        this.angle = ang;
-    }
+    public void rotate(Angle3D angleAction){}
 
-    public void move(Point3D loc) {
-        this.location = loc;
-    }
-
-    public Camera(List<Scene> scene) {
-        this.location = new Point3D();
-        this.angle = new Angle3D();
-        scene.add(new Scene(0));
-    }
+    public void move(Point3D pointAction){}
 }
